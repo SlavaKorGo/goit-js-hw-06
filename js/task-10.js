@@ -12,9 +12,9 @@ function createBoxes(amount) {
     const div = document.createElement("div");
     div.classList.add('galery-item');
     div.style.backgroundColor = getRandomHexColor();
-    div.style.width = width + 'px';
+    div.style.width = `${width}px`;
     width += 10;
-    div.style.height = height + 'px';
+    div.style.height = `${height}px`;
     height += 10;
     divEl.push(div);
   }
@@ -43,13 +43,6 @@ btnDestroy.addEventListener ('click', () => {
 
 
 
-// const createButton = document.querySelector('button[data-create]');
-// const destroyButton = document.querySelector('button[ data-destroy]');
-
-
-
-
-
 // Напиши скрипт створення і очищення колекції елементів. 
 // Користувач вводить кількість елементів в input і натискає 
 // кнопку Створити, після чого рендериться колекція. 
@@ -69,3 +62,16 @@ btnDestroy.addEventListener ('click', () => {
 // такий спосіб видаляючи всі створені елементи.
 
 
+console.log(document);
+
+const body = document.body;
+console.log(body);
+
+const list = body.firstElementChild;
+console.log(list);
+
+const firstListItem = list.firstElementChild;
+console.log(firstListItem);
+
+const listItems = list.children;
+console.log(listItems);
