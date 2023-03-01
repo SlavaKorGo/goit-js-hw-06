@@ -8,12 +8,12 @@ buttonDecrement.addEventListener('click', handleButtonDecrementClick);
 buttonIncrement.addEventListener('click', handleButtonIncrementClick);
 
  function handleButtonDecrementClick (value) {
-    console.log((counterValue += 1));
+    console.log((counterValue -= 1));
     valueShown.textContent = counterValue;
  }; 
 
  function handleButtonIncrementClick (value) {
-    console.log((counterValue -= 1));
+    console.log((counterValue += 1));
     valueShown.textContent = counterValue;
  }; 
 

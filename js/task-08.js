@@ -21,7 +21,9 @@ const formData = {
 
 console.log(formData);
 
+logiForm.reset();
 }
+
 
 
 // Напиши скрипт управління формою логіна.

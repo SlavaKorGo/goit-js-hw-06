@@ -22,12 +22,11 @@ const ulEl = document.querySelector('#boxes');
 ulEl.append(...divEl);
 }
 
-function destroyBoxes(amount) { 
-  const divEl = document.querySelectorAll('.galery-item');
-  for (let i = 0; i < amount; i++){
-   divEl[i].remove();
-  }
- }
+
+function destroyBoxes() {
+  boxes.innerHTML = '';
+  refs.inputNumber.value = '';
+}
 
 const number = document.querySelector('input');
 number.addEventListener('input', (e) => {});
